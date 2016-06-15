@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <h1>Target ${{modal.max}}</h1>
+</div>
+<div class="modal-body">
+    <uib-progressbar animate="true" value="modal.dynamic" type="success"><b>${{modal.dynamic}}</b></uib-progressbar>
+    <div class="row">
+        <div class="col-md-12">
+            <p style="padding: 15px;" class="bg-danger">You need <strong>${{modal.max - modal.dynamic}}</strong> more to reach your target.</p>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="modal.cancel()">Close</button>
+</div>
