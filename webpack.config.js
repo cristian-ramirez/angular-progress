@@ -12,7 +12,7 @@ exports.output = {
     filename: '[name].min.js'
 };
 
-exports.output.publicPath = 'http://localhost:9080/';
+exports.output.publicPath = 'https://angular-progress.herokuapp.com:9080/';
 
 exports.resolve = {
     alias: {
